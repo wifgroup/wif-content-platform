@@ -1,8 +1,8 @@
 // Cloudflare Pages Function: GET /api/content/:collection/:slug
 // Gets a single content item
 
-import { getGithubClient } from "../../shared/github";
-import { corsHeaders } from "../../shared/auth";
+import { getGithubClient } from "../../../shared/github";
+import { corsHeaders } from "../../../shared/auth";
 
 export async function onRequestGet(context) {
   const { request, env } = context;

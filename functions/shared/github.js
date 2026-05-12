@@ -1,7 +1,7 @@
 // GitHub API client using octokit
 // Uses Cloudflare Workers fetch-compatible implementation
 
-import { Octokit } from "@octokit/core";
+import { Octokit } from "@octokit/rest";
 
 export async function getGithubClient(request, env) {
   const token = await getAccessToken(request, env);

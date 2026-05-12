@@ -1,9 +1,9 @@
 // Webhook receiver with full sync pipeline
 
-import { corsHeaders } from "../../shared/auth";
-import { deleteKV, setKV, getKV } from "../../shared/kv";
-import { getGithubClient } from "../../shared/github";
-import { enqueueSyncJob } from "../../shared/queue";
+import { corsHeaders } from "../shared/auth";
+import { deleteKV, setKV, getKV } from "../shared/kv";
+import { getGithubClient } from "../shared/github";
+import { enqueueSyncJob } from "../shared/queue";
 
 export async function onRequestPost(context) {
   const { request, env } = context;

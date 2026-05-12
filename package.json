@@ -10,6 +10,7 @@
     "deploy": "npx wrangler pages deploy ./dist"
   },
   "dependencies": {
+    "@octokit/rest": "^22.0.1",
     "lucide-react": "^1.14.0",
     "marked": "^12.0.0",
     "react": "^18.3.0",
