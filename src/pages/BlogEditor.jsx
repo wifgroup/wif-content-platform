@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import api from "../utils/api";
-import PostEditor from "../components/PostEditor";
 import SEOPanel from "../components/SEOPanel";
 import MediaUploader from "../components/MediaUploader";
 import Preview from "../components/Preview";
